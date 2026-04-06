@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="header">
+        <h1>✔️Task Manager App</h1>
+        <p class="description">Organise your work and get things done</p>
+     </div>
+     <div id="container">
+        <input type="text" placeholder="What needs to be done" id="task"/>
+        <select name="tasks-categories" id="categories">
+            <option value="medium">Medium Priority</option>
+            <option value="high">High Priority</option>
+            <option value="low">Low Priority</option>
+        </select>
+        <button id="add-task">+Add Task</button>
+        <input type="text" placeholder="Add a description (optional)" id="description"/>
+        <div class="stat-conatainer">
+            <div class="stat-item-1">
+                <p>0</p>
+                <p>Total Tasks</p>
+            </div>
+            <div class="stat-item-2">
+                <p>0</p>
+                <p>Active</p>
+            </div>
+            <div class="stat-item-3">
+                <p>0</p>
+                <p>Completed</p>
+            </div>
+        </div>
+       <div class="all-categories">
+         <button class="all">All</button>
+         <button class="active">active</button>
+         <button class="completed">Completed</button>
+         <button class="high-p">High Priority</button>
+         <button class="med-p">Med Priority</button>
+         <button class="low-p">Low Priority</button>
+       </div>
+       <div class="output"></div>
+     </div>
+     <script src="index.js"></script>
+</body>
+</html>
